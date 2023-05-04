@@ -6,7 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML and CSS Tutorial</title>
 </head>
+<style>
+    .subscribe-btn{
+        background-color: rgb(207, 0, 0);
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-right: 4px;
+    }
+    .subscribe-btn:hover{
+        background-color: rgb(241, 13, 13);
+    }
+    .join-btn{
+        background-color: white;
+        border: 2px solid rgb(29, 161, 242);
+        color: rgb(29, 161, 242);
+        padding: 8px 12px;
+        border-radius: 3px;
+        cursor: pointer;
+        font-weight: bold;
+        margin-right: 4px;
+        /* transition takes two values
+           1st on which you want to apply transition
+           2nd for how many time you want to apply 
+           we can also put multiple values together
+          */
+        transition: background-color 1s, color 1s;
+    }
+    .join-btn:hover{
+        background-color: rgb(29, 161, 242);
+        color: white;
+    }
+    .tweet-btn{
+        background-color: rgb(29, 161, 242);
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: none;
+        transition: box-shadow 1s;
+    }
+    .tweet-btn:hover{
+        /* box shadow takes 4 values
+           1. shadow in x axis
+           2. shadow in y axis
+           3. blur you want 
+           4. color which type of shadow you wanna apply*/
+        box-shadow: 10px 10px 20px red;
+    }
+
+</style>
 <body>
-    
+    <button class="subscribe-btn">SUBSCRIBE</button>
+    <button class="join-btn">JOIN</button>
+    <button class="tweet-btn">Tweet</button>
 </body>
 </html>
