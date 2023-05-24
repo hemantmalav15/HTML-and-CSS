@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            height: 400px;
+            border: 2px solid crimson;
+            display: flex;
+            gap: 10px;
+            /* flex-direction: row;
+            flex-wrap: wrap; */
+
+            /* flex-flow: row wrap; */
+            /* align-items: center; */
+            /* align-content: flex-start; */
+        }
+        .box{
+            border: 2px solid green;
+            width: 100px;
+
+        }
+        /* .box:nth-child(4){
+            background-color: blue;
+        } */
+        #box-5{
+            flex-grow: 1;
+            /* sets the width of box according to main axis */
+            /* flex-basis: 25%; */
+        }
+        #box-2{
+            /* shrink ki default value 1 hoti h if we set its value to (0) then box will not be shrink */
+            flex-shrink: 2;
+             /* grow ki default value 0 hoti h if we set its value to (1,2,3) box will be grow accordingly */
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1>flexbox</h1>
+    <div class="container">
+        <div class="box">box-1</div>
+        <div class="box" id="box-2">box-2</div>
+        <div class="box">box-3</div>
+        <div class="box">box-4</div>
+        <div class="box" id="box-5">box-5</div>
+        <div class="box">box-6</div>
+        <div class="box">box-7</div>
+        <div class="box">box-8</div>
+    </div>
+</body>
+</html>

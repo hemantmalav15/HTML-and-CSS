@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video background</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            position: relative;
+        }
+        .heading{
+            position: absolute;
+            top: 50vh;
+            left: 40vw;
+            color: aqua;
+        }
+
+        video {
+            width: 100vw;
+            height: 99vh;
+            /* background-size: cover; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <video controls autoplay src="pexels-luciann-photography-3971351-3840x2160-25fps.mp4">
+        </video>
+        <h1 class="heading">background video</h1>
+    </div>
+</body>
+
+</html>
