@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-list</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #333245;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .todo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 4rem;
+        }
+
+        .todo ul li input {
+            margin-right: 1rem;
+            transform: scale(1.8);
+        }
+
+
+        .box {
+            display: flex;
+            /* border: 2px solid; */
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin: 10px;
+        }
+
+        li {
+            padding: 10px;
+            font-size: 20px;
+            list-style: none;
+        }
+        span{
+            color: red;
+        }
+        footer{
+            position: fixed;
+            bottom: 0;
+            left: 48%;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>To-Do List</h1>
+
+    <div class="todo">
+        <ul>
+            <li><input type="checkbox" />Wake up early</li>
+            <li><input type="checkbox" />Go for a walk</li>
+            <li><input type="checkbox" />Buy Groceries</li>
+            <li><input type="checkbox" />Do Homework</li>
+            <li><input type="checkbox" />Do Laundary</li>
+            <li><input type="checkbox" />Call Parents</li>
+        </ul>
+    </div>
+    <footer> Made with <span>♥</span> by Hemant</footer>
+</body>
+
+</html>
